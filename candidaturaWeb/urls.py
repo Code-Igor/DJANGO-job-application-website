@@ -16,7 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from . import views  # importando do arquivo views
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('webForm/', views.form_view)
 ]
