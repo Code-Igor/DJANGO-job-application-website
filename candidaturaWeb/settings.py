@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles', 
-    'webForm' # adicionando o app da página do formulario
+    'candidatura' # adicionando o app da página do formulario
 ]
 
 MIDDLEWARE = [
@@ -52,7 +52,7 @@ ROOT_URLCONF = 'candidaturaWeb.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR/'templates'], #adicionado o templates (onde irá ficar meu html)
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
