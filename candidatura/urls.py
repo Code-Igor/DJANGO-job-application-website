@@ -9,5 +9,6 @@ app_name = "candidatura"
 
 urlpatterns = [ 
     path("", views.home_view), #rota "home" do formulario
+    path('candidatura/home', views.home_view, name = "home"), #home da candidatura
     path("formulario/", views.form_view, name = "formulario") #rota do formulario
 ]
