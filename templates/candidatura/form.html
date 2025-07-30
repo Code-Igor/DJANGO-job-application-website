@@ -12,10 +12,13 @@
     <h1> Venha fazer parte da nossa incrível equipe! </h1>
 
     <!-- o formulário em si, puxando do python -->
-    <form action = "" method="post">
+    <form method="post">
         {% csrf_token %} <!-- modulo de segurança -->
-        {{form}}
+        {{form.as_p}}
     </form>
+    <button type="submit" class="btn btn-primary">
+        ENVIAR
+    </button>
     
 </body>
 </html>

@@ -1,11 +1,10 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect 
 from .forms import CandidaturaForm # import do form que criei
 from django.http import HttpRequest
 
 
-
 def home_view(request):
-    return render(request, 'candidatura/home.html') #levando para a pagina home da candidatura
+    return render(request, 'candidatura/candidaturaHome.html') #levando para a pagina home da candidatura
 
 
 def form_view(request:HttpRequest): #tipando o meu request

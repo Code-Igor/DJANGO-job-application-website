@@ -10,6 +10,6 @@ class CandidaturaForm(forms.ModelForm):
         widgets = {
             'nome_completo': forms.TextInput(attrs={'class': 'form-control'}),
             'idade': forms.NumberInput(attrs={'class': 'form-control'}),
-            'email': forms.Emailnput(attrs={'class': 'form-control'}),
+            'email': forms.EmailInput(attrs={'class': 'form-control'}),
             'reposta': forms.Textarea(attrs={'class': 'form-control', 'rows': 4}),
         }
