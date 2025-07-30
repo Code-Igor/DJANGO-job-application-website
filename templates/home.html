@@ -14,18 +14,45 @@
     <!-- faixa azul com o título, utilizando section e div para separar-->
     <section class="bg-primary text-white py-5">
         <div class="container text-center">
-            <h1 class="display-4 fw-bold"> CHOOSE </h1>
+            <h1 class="display-4 fw-bold"> QUEM SOMOS? </h1>
         </div>
     </section>
 
     <!-- espaço para o texto -->
     <section class="py-5">
-        <div class="container text-center">
-            <p class="lead text-muted">
-                texto aqui boy
+        <div class="container text-center"> 
+            <p class="lead text-muted"> 
+                <!-- texto qualquer criado por IA apenas para usarcomo base para o desenvolvimento-->
+                A CloudTech é uma empresa de tecnologia focada em soluções em nuvem, automação e infraestrutura digital inteligente. Nosso objetivo é tornar a tecnologia acessível, eficiente e segura para negócios de todos os portes.
+                <br>
+                Com uma equipe apaixonada por inovação, atuamos desde a consultoria até a implementação de sistemas modernos que ajudam empresas a escalarem com confiança e agilidade. Oferecemos serviços como migração para a nuvem, gerenciamento de servidores, integração de IA e otimização de processos digitais.
+                <br>
+                Acreditamos que tecnologia não deve ser um obstáculo, e sim uma ponte para o crescimento. Por isso, trabalhamos lado a lado com nossos clientes, entendendo suas necessidades e entregando soluções personalizadas e sustentáveis.
+                <br>
+                Na CloudTech, o futuro já começou — e queremos construí-lo com você.
             </p>
+            
         </div>
     </section>
+
+    <section>
+        <div class="container text-center mt-5 p-3">
+            <h1 class="display-6 fw-bold"> VAGAS ABERTAS </h1>
+        </div>
+
+        <div class="container text-center mb-5 p-3">
+            <a href="{% url 'candidatura:home' %}" class="btn btn-primary btn-lg">
+                <b> ANALISTA DE SISTEMAS JÚNIOR </b>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER padrão, vou utlizar em todas as paginas para deixar bonito e manter essa encenção da empresa ficticia-->
+    <footer class="bg-primary text-white text-center py-3">
+        <div class="container">
+            <small>© 2025 CloudTech — Todos os direitos reservados.</small>
+        </div>
+    </footer>
 
 </body>
 </html>
