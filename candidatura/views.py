@@ -13,7 +13,7 @@ def form_view(request:HttpRequest): #tipando o meu request
         formulario = CandidaturaForm(request.POST) 
         if formulario.is_valid():
             formulario.save() 
-            return redirect("candidatura:home") #depois de ter validado o formulario e salvado, o usuario volta para a home
+            return redirect("") #depois de ter validado o formulario e salvado, o usuario volta para a home
 
     formulario = {
         "form":CandidaturaForm # passando o formulário pro html
