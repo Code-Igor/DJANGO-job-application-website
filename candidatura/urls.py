@@ -11,5 +11,5 @@ urlpatterns = [
     
     path('', views.home_view, name = "home"), #home da candidatura
     path("formulario/", views.form_view, name = "formulario"), #rota do formulario
-    path('candidaturas_excel/', views.exportar_candidaturas, name='candidaturas_excel') #url que baixa o arquivo excel
+    path('candidaturas_excel/', views.exportar_candidaturas_view, name='candidaturas_excel') #url que baixa o arquivo excel
 ]
